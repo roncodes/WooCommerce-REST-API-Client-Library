@@ -195,6 +195,28 @@ class WC_API_Client_Resource_Products extends WC_API_Client_Resource {
 		return $this->do_request();
 	}
 
+	/**
+	 * Get a list of shipping classes
+	 *
+	 * GET /products/shipping_classes
+	 * GET /products/shipping_classes/{#id}
+	 *
+	 * @since 2.0
+	 * @param int $id shipping class ID or null to get all shipping classes
+	 * @param array $args acceptable shipping classes endpoint args, currently only `fields`
+	 * @return array|object product shipping classes!
+	 */
+	public function get_shipping_classes( $id = null, $args = array() ) {
+
+		$this->set_request_args( array(
+			'method' => 'GET',
+			'path'   => array( 'shipping_classes', $id ),
+			'params' => $args,
+		) );
+
+		return $this->do_request();
+	}
+
 
 	/** Convenience methods - these do not map directly to an endpoint ********/
 
