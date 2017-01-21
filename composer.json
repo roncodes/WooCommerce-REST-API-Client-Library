@@ -1,8 +1,12 @@
 {
-    "name": "woothemes/woocommerce-api",
+    "name": "roncodes/woocommerce-rest-api-client",
     "description": "A client library for the WooCommerce REST API",
     "license": "GPL v3",
     "authors": [
+        {
+            "name": "Ronald A. Richardson",
+            "email": "ron@rarbuilt.com"
+        },
         {
             "name": "Max Rice",
             "email": "max@maxrice.com"
